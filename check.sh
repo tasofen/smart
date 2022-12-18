@@ -1,21 +1,16 @@
 #!/bin/bash
 
-# ssd
-/usr/sbin/smartctl -a /dev/sda \
-    | grep -v "Local Time is:" \
-    | grep -v Total_LBAs_Written \
-    | grep -v Power_On_Hours \
-    | grep -v Airflow_Temperature_Cel \
-    > sda.log
-
-# hdd 5400
-/usr/sbin/smartctl -a /dev/sdb \
-    | grep -v "Local Time is:" \
-    | grep -v Temperature_Celsius \
-    | grep -v Power_On_Hours \
-    > sdb.log
+# nvme
+/usr/sbin/smartctl -a /dev/nvme0 \
+    | grep -v 'Local Time is:' \
+    | grep -v 'Temperature:' \
+    | grep -v 'Data Units Read:' \
+    | grep -v 'Data Units Written:' \
+    | grep -v 'Power On Hours:' \
+    | grep -v 'Host Read Commands:' \
+    | grep -v 'Host Write Commands:' \
+    > nvme.log
 
 git add .
-git commit -m "save"
-git push origin master
-
+git commit -m "notebook"
+git push origin notebook

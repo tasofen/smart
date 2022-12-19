@@ -9,6 +9,7 @@
     | grep -v 'Power On Hours:' \
     | grep -v 'Host Read Commands:' \
     | grep -v 'Host Write Commands:' \
+    | grep -v 'Controller Busy Time:' \
     > nvme.log
 
 git add .

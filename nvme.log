@@ -44,13 +44,13 @@ Critical Warning:                   0x00
 Available Spare:                    100%
 Available Spare Threshold:          5%
 Percentage Used:                    8%
-Unsafe Shutdowns:                   23
+Unsafe Shutdowns:                   24
 Media and Data Integrity Errors:    0
-Error Information Log Entries:      429
+Error Information Log Entries:      431
 Warning  Comp. Temperature Time:    0
 Critical Comp. Temperature Time:    0
 
 Error Information (NVMe Log 0x01, 16 of 63 entries)
 Num   ErrCount  SQId   CmdId  Status  PELoc          LBA  NSID    VS
-  0        429     0  0x4003  0x4004  0x028            0     0     -
+  0        431     0  0x0011  0x4004  0x028            0     0     -
 

@@ -55,7 +55,7 @@ SCT capabilities: 	       (0x003d)	SCT Status supported.
 SMART Attributes Data Structure revision number: 16
 Vendor Specific SMART Attributes with Thresholds:
 ID# ATTRIBUTE_NAME          FLAG     VALUE WORST THRESH TYPE      UPDATED  WHEN_FAILED RAW_VALUE
-  1 Raw_Read_Error_Rate     0x000b   100   100   062    Pre-fail  Always       -       0
+  1 Raw_Read_Error_Rate     0x000b   100   100   062    Pre-fail  Always       -       65536
   2 Throughput_Performance  0x0005   100   100   040    Pre-fail  Offline      -       0
   3 Spin_Up_Time            0x0007   197   197   033    Pre-fail  Always       -       1
   4 Start_Stop_Count        0x0012   095   095   000    Old_age   Always       -       8611
@@ -67,7 +67,7 @@ ID# ATTRIBUTE_NAME          FLAG     VALUE WORST THRESH TYPE      UPDATED  WHEN_
 191 G-Sense_Error_Rate      0x000a   100   100   000    Old_age   Always       -       0
 192 Power-Off_Retract_Count 0x0032   098   098   000    Old_age   Always       -       408
 193 Load_Cycle_Count        0x0012   094   094   000    Old_age   Always       -       66434
-196 Reallocated_Event_Count 0x0032   100   100   000    Old_age   Always       -       320
+196 Reallocated_Event_Count 0x0032   100   100   000    Old_age   Always       -       321
 197 Current_Pending_Sector  0x0022   100   100   000    Old_age   Always       -       1
 198 Offline_Uncorrectable   0x0008   100   100   000    Old_age   Offline      -       0
 199 UDMA_CRC_Error_Count    0x000a   200   200   000    Old_age   Always       -       114

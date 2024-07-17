@@ -51,6 +51,5 @@ Warning  Comp. Temperature Time:    0
 Critical Comp. Temperature Time:    0
 
 Error Information (NVMe Log 0x01, 16 of 63 entries)
-Num   ErrCount  SQId   CmdId  Status  PELoc          LBA  NSID    VS
-  0        614     0  0x001c  0x4004  0x028            0     0     -
+No Errors Logged
 
